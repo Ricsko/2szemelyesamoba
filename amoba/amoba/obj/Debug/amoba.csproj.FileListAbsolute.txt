@@ -1,0 +1,10 @@
+D:\amoba\amoba\amoba\bin\Debug\amoba.exe.config
+D:\amoba\amoba\amoba\bin\Debug\amoba.exe
+D:\amoba\amoba\amoba\bin\Debug\amoba.pdb
+D:\amoba\amoba\amoba\obj\Debug\amoba.csprojAssemblyReference.cache
+D:\amoba\amoba\amoba\obj\Debug\amoba.Form1.resources
+D:\amoba\amoba\amoba\obj\Debug\amoba.Properties.Resources.resources
+D:\amoba\amoba\amoba\obj\Debug\amoba.csproj.GenerateResource.cache
+D:\amoba\amoba\amoba\obj\Debug\amoba.csproj.CoreCompileInputs.cache
+D:\amoba\amoba\amoba\obj\Debug\amoba.exe
+D:\amoba\amoba\amoba\obj\Debug\amoba.pdb
