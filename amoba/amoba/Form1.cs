@@ -39,11 +39,11 @@ namespace amoba
                     button1.Size = new Size(50, 50);
                     button1.Location = new Point(x + 6, y);
                     button1.BackColor = Color.White;
-
                     button1.Click += new System.EventHandler(this.klikk);
-
+                    button1.Name = $"BTN_{i}_{j}";
                     this.Controls.Add(button1);
                     buttonok[i, j] = button1;
+                    tictac[i, j] = "";
 
                     x += 50;
                 }
@@ -54,8 +54,17 @@ namespace amoba
         }
         private void klikk(object sender, EventArgs e)
         {
+            int x = 0;
+            int o = 0;
             Button klikkelt = sender as Button;
             klikkelt.Text = aktualisjel;
+
+
+            int sor = Convert.ToInt32(klikkelt.Name.Split('_')[1]);
+            int oszlop = Convert.ToInt32(klikkelt.Name.Split('_')[2]);
+
+            tictac[sor, oszlop] = aktualisjel;
+
             if(aktualisjel == "X")
             {
                 aktualisjel = "O";
@@ -64,11 +73,49 @@ namespace amoba
             {
                 aktualisjel = "X";
             }
+
+
             
+            for (int i = 0; i < 10; i++)
+            {
+                for (int j = 1; j < 10; j++)
+                {
+                    if (tictac[i, j] != "" && tictac[i,j]=="X" && tictac[i, j] == tictac[i, j - 1])
+                    {
+                        x++;
+                    }
+                    /*
+                    if (tictac[i, j] == "" && tictac[i, j] != "X" && tictac[i, j] == tictac[i, j - 1])
+                    {
+                        x--;
+                    }
+                    */
+                    else if(tictac[i, j] != "" && tictac[i, j] == "O" && tictac[i, j] == tictac[i, j - 1])
+                    {
+                        o++;
+                    }
+                    /*
+                    else if (tictac[i, j] == "" && tictac[i, j] != "O" && tictac[i, j] == tictac[i, j - 1])
+                    {
+                        o--;
+                    }
+                    */
+                }
+            }
+            if (o == 4)
+            {
+                MessageBox.Show("O nyert");
+            }
+            else if(x == 4)
+            {
+                MessageBox.Show("X nyert");
+            }
         }
 
         private void jatekosNevek()
         {
+
+            //Nevek ellenörzése
 
             jatekos1 = jatekos1_TBOX.Text;
             jatekos2 = jatekos2_TBOX.Text;
@@ -85,8 +132,8 @@ namespace amoba
 
         private void start_BTN_Click(object sender, EventArgs e)
         {
-            gombletrehozas();
             jatekosNevek();
+            gombletrehozas();
             RandomJEL();
 
         }
