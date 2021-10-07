@@ -18,6 +18,7 @@ namespace amoba
         static string jatekos2_jel = "";
         static Button[,] buttonok = new Button[10, 10];
         static string[,] tictac = new string[10, 10];
+        static string aktualisjel = "X";
 
 
         public Form1()
@@ -39,6 +40,8 @@ namespace amoba
                     button1.Location = new Point(x + 6, y);
                     button1.BackColor = Color.White;
 
+                    button1.Click += new System.EventHandler(this.klikk);
+
                     this.Controls.Add(button1);
                     buttonok[i, j] = button1;
 
@@ -48,6 +51,20 @@ namespace amoba
                 y += 50;
             }
             this.Size = new Size(530, 600);
+        }
+        private void klikk(object sender, EventArgs e)
+        {
+            Button klikkelt = sender as Button;
+            klikkelt.Text = aktualisjel;
+            if(aktualisjel == "X")
+            {
+                aktualisjel = "O";
+            }
+            else
+            {
+                aktualisjel = "X";
+            }
+            
         }
 
         private void jatekosNevek()

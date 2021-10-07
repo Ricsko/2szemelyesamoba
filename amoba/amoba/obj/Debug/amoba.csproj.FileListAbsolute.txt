@@ -18,3 +18,13 @@ D:\asztali_KKG\amoba\amoba\obj\Debug\amoba.csproj.GenerateResource.cache
 D:\asztali_KKG\amoba\amoba\obj\Debug\amoba.csproj.CoreCompileInputs.cache
 D:\asztali_KKG\amoba\amoba\obj\Debug\amoba.exe
 D:\asztali_KKG\amoba\amoba\obj\Debug\amoba.pdb
+D:\tp_amoba\amoba\amoba\bin\Debug\amoba.exe.config
+D:\tp_amoba\amoba\amoba\bin\Debug\amoba.exe
+D:\tp_amoba\amoba\amoba\bin\Debug\amoba.pdb
+D:\tp_amoba\amoba\amoba\obj\Debug\amoba.csproj.AssemblyReference.cache
+D:\tp_amoba\amoba\amoba\obj\Debug\amoba.Form1.resources
+D:\tp_amoba\amoba\amoba\obj\Debug\amoba.Properties.Resources.resources
+D:\tp_amoba\amoba\amoba\obj\Debug\amoba.csproj.GenerateResource.cache
+D:\tp_amoba\amoba\amoba\obj\Debug\amoba.csproj.CoreCompileInputs.cache
+D:\tp_amoba\amoba\amoba\obj\Debug\amoba.exe
+D:\tp_amoba\amoba\amoba\obj\Debug\amoba.pdb
