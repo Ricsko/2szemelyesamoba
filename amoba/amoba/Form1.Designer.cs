@@ -83,7 +83,7 @@ namespace amoba
             // jatekos1_megjelenito_LBL
             // 
             this.jatekos1_megjelenito_LBL.AutoSize = true;
-            this.jatekos1_megjelenito_LBL.Location = new System.Drawing.Point(39, 0);
+            this.jatekos1_megjelenito_LBL.Location = new System.Drawing.Point(39, 6);
             this.jatekos1_megjelenito_LBL.Name = "jatekos1_megjelenito_LBL";
             this.jatekos1_megjelenito_LBL.Size = new System.Drawing.Size(0, 13);
             this.jatekos1_megjelenito_LBL.TabIndex = 5;
@@ -91,7 +91,7 @@ namespace amoba
             // jatekos2_megjelenito_LBL
             // 
             this.jatekos2_megjelenito_LBL.AutoSize = true;
-            this.jatekos2_megjelenito_LBL.Location = new System.Drawing.Point(143, 0);
+            this.jatekos2_megjelenito_LBL.Location = new System.Drawing.Point(143, 6);
             this.jatekos2_megjelenito_LBL.Name = "jatekos2_megjelenito_LBL";
             this.jatekos2_megjelenito_LBL.Size = new System.Drawing.Size(0, 13);
             this.jatekos2_megjelenito_LBL.TabIndex = 6;
