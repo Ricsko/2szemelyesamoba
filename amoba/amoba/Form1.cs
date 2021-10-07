@@ -12,16 +12,18 @@ namespace amoba
 {
     public partial class Form1 : Form
     {
+        static string jatekos1 = "";
+        static string jatekos2 = "";
+
+
         public Form1()
         {
             InitializeComponent();
-
-            gombletrehozas();
         }
 
         private void gombletrehozas()
         {
-            int x = 200;
+            int x = 0;
             int y = 30;
 
             for (int i = 0; i < 10; i++)
@@ -38,9 +40,33 @@ namespace amoba
 
                     x += 50;
                 }
-                x = 200;
+                x = 0;
                 y += 50;
             }
+            this.Size = new Size(530, 600);
+        }
+
+        private void jatekosNevek()
+        {
+
+            jatekos1 = jatekos1_TBOX.Text;
+            jatekos2 = jatekos2_TBOX.Text;
+
+            jatekos1_megjelenito_LBL.Text = jatekos1;
+            jatekos2_megjelenito_LBL.Text = jatekos2;
+
+            label1.Visible = false;
+            label2.Visible = false;
+            jatekos1_TBOX.Visible = false;
+            jatekos2_TBOX.Visible = false;
+            start_BTN.Visible = false;
+            //proba
+        }
+
+        private void start_BTN_Click(object sender, EventArgs e)
+        {
+            gombletrehozas();
+            jatekosNevek();
         }
     }
 }
