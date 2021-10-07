@@ -14,6 +14,10 @@ namespace amoba
     {
         static string jatekos1 = "";
         static string jatekos2 = "";
+        static string jatekos1_jel = "";
+        static string jatekos2_jel = "";
+        static Button[,] buttonok = new Button[10, 10];
+        static string[,] tictac = new string[10, 10];
 
 
         public Form1()
@@ -36,7 +40,7 @@ namespace amoba
                     button1.BackColor = Color.White;
 
                     this.Controls.Add(button1);
-
+                    buttonok[i, j] = button1;
 
                     x += 50;
                 }
@@ -60,13 +64,30 @@ namespace amoba
             jatekos1_TBOX.Visible = false;
             jatekos2_TBOX.Visible = false;
             start_BTN.Visible = false;
-            //proba
         }
 
         private void start_BTN_Click(object sender, EventArgs e)
         {
             gombletrehozas();
             jatekosNevek();
+            RandomJEL();
+
+        }
+
+        private void RandomJEL()
+        {
+            Random r = new Random();
+            string[] jelek = new string[2] { "X", "O" };
+            int index = r.Next(0, 2);
+            jatekos1_jel = jelek[index];
+            if(jatekos1_jel == "X")
+            {
+                jatekos2_jel = "O";
+            }
+            else
+            {
+                jatekos2_jel = "X";
+            }
         }
     }
 }
