@@ -34,6 +34,8 @@ namespace amoba
             this.jatekos1_TBOX = new System.Windows.Forms.TextBox();
             this.jatekos2_TBOX = new System.Windows.Forms.TextBox();
             this.start_BTN = new System.Windows.Forms.Button();
+            this.jatekos1_megjelenito_LBL = new System.Windows.Forms.Label();
+            this.jatekos2_megjelenito_LBL = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -76,12 +78,31 @@ namespace amoba
             this.start_BTN.TabIndex = 4;
             this.start_BTN.Text = "Start";
             this.start_BTN.UseVisualStyleBackColor = true;
+            this.start_BTN.Click += new System.EventHandler(this.start_BTN_Click);
+            // 
+            // jatekos1_megjelenito_LBL
+            // 
+            this.jatekos1_megjelenito_LBL.AutoSize = true;
+            this.jatekos1_megjelenito_LBL.Location = new System.Drawing.Point(39, 0);
+            this.jatekos1_megjelenito_LBL.Name = "jatekos1_megjelenito_LBL";
+            this.jatekos1_megjelenito_LBL.Size = new System.Drawing.Size(0, 13);
+            this.jatekos1_megjelenito_LBL.TabIndex = 5;
+            // 
+            // jatekos2_megjelenito_LBL
+            // 
+            this.jatekos2_megjelenito_LBL.AutoSize = true;
+            this.jatekos2_megjelenito_LBL.Location = new System.Drawing.Point(143, 0);
+            this.jatekos2_megjelenito_LBL.Name = "jatekos2_megjelenito_LBL";
+            this.jatekos2_megjelenito_LBL.Size = new System.Drawing.Size(0, 13);
+            this.jatekos2_megjelenito_LBL.TabIndex = 6;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(314, 241);
+            this.Controls.Add(this.jatekos2_megjelenito_LBL);
+            this.Controls.Add(this.jatekos1_megjelenito_LBL);
             this.Controls.Add(this.start_BTN);
             this.Controls.Add(this.jatekos2_TBOX);
             this.Controls.Add(this.jatekos1_TBOX);
@@ -101,6 +122,8 @@ namespace amoba
         private System.Windows.Forms.TextBox jatekos1_TBOX;
         private System.Windows.Forms.TextBox jatekos2_TBOX;
         private System.Windows.Forms.Button start_BTN;
+        private System.Windows.Forms.Label jatekos1_megjelenito_LBL;
+        private System.Windows.Forms.Label jatekos2_megjelenito_LBL;
     }
 }
 
