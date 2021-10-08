@@ -26,6 +26,35 @@ namespace amoba
             InitializeComponent();
         }
 
+        private void klikk(object sender, EventArgs e)
+        {
+            Button klikkelt = sender as Button;
+            klikkelt.Text = aktualisjel;
+
+            int sor = Convert.ToInt32(klikkelt.Name.Split('_')[1]);
+            int oszlop = Convert.ToInt32(klikkelt.Name.Split('_')[2]);
+
+            tictac[sor, oszlop] = aktualisjel;
+
+            if (aktualisjel == "X")
+            {
+                aktualisjel = "O";
+            }
+            else
+            {
+                aktualisjel = "X";
+            }
+
+            soronlevoJatekos();
+        }
+
+        private void start_BTN_Click(object sender, EventArgs e)
+        {
+            jatekosNevek();
+            RandomJEL();
+            soronlevoJatekos();
+            gombletrehozas();
+        }
         private void gombletrehozas()
         {
             int x = 0;
@@ -51,53 +80,6 @@ namespace amoba
                 y += 50;
             }
             this.Size = new Size(530, 600);
-        }
-        private void klikk(object sender, EventArgs e)
-        {
-            Button klikkelt = sender as Button;
-            klikkelt.Text = aktualisjel;
-
-            int sor = Convert.ToInt32(klikkelt.Name.Split('_')[1]);
-            int oszlop = Convert.ToInt32(klikkelt.Name.Split('_')[2]);
-
-            tictac[sor, oszlop] = aktualisjel;
-
-            if (aktualisjel == "X")
-            {
-                aktualisjel = "O";
-            }
-            else
-            {
-                aktualisjel = "X";
-            }
-
-            soronlevoJatekos();
-        }
-
-        private void jatekosNevek()
-        {
-
-            //Nevek ellenörzése
-
-            jatekos1 = jatekos1_TBOX.Text;
-            jatekos2 = jatekos2_TBOX.Text;
-
-            jatekos1_megjelenito_LBL.Text = jatekos1;
-            jatekos2_megjelenito_LBL.Text = jatekos2;
-
-            label1.Visible = false;
-            label2.Visible = false;
-            jatekos1_TBOX.Visible = false;
-            jatekos2_TBOX.Visible = false;
-            start_BTN.Visible = false;
-        }
-
-        private void start_BTN_Click(object sender, EventArgs e)
-        {
-            jatekosNevek();
-            RandomJEL();
-            soronlevoJatekos();
-            gombletrehozas();
         }
 
         private void soronlevoJatekos()
@@ -133,6 +115,24 @@ namespace amoba
 
             jatekos1_megjelenito_LBL.Text = jatekos1 + " " + jatekos1_jel;
             jatekos2_megjelenito_LBL.Text = jatekos2 + " " + jatekos2_jel;
+        }
+
+        private void jatekosNevek()
+        {
+
+            //Nevek ellenörzése
+
+            jatekos1 = jatekos1_TBOX.Text;
+            jatekos2 = jatekos2_TBOX.Text;
+
+            jatekos1_megjelenito_LBL.Text = jatekos1;
+            jatekos2_megjelenito_LBL.Text = jatekos2;
+
+            label1.Visible = false;
+            label2.Visible = false;
+            jatekos1_TBOX.Visible = false;
+            jatekos2_TBOX.Visible = false;
+            start_BTN.Visible = false;
         }
     }
 }
