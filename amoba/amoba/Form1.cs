@@ -53,6 +53,28 @@ namespace amoba
         private void jatekLogika()
         {
             vizszintesEllenorzes();
+            fuggolegesEllenorzes();
+        }
+
+        private void fuggolegesEllenorzes()
+        {
+            string xo = "";
+
+            for (int i = 0; i < 10; i++)
+            {
+                for (int j = 0; j < 10; j++)
+                {
+                    xo += tictac[j, i];
+                }
+            }
+            if (xo.Contains("XXXXX"))
+            {
+                MessageBox.Show("Grat X");
+            }
+            else if (xo.Contains("OOOOO"))
+            {
+                MessageBox.Show("Grat O");
+            }
         }
 
         private void vizszintesEllenorzes()
@@ -61,7 +83,7 @@ namespace amoba
 
             for (int i = 0; i < 10; i++)
             {
-                for (int j = 1; j < 10; j++)
+                for (int j = 0; j < 10; j++)
                 {
                     xo += tictac[i, j];
                 }
