@@ -52,6 +52,11 @@ namespace amoba
 
         private void jatekLogika()
         {
+            vizszintesEllenorzes();
+        }
+
+        private void vizszintesEllenorzes()
+        {
             string xo = "";
 
             for (int i = 0; i < 10; i++)
