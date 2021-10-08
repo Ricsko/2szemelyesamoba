@@ -91,7 +91,7 @@ namespace amoba
             // jatekos2_megjelenito_LBL
             // 
             this.jatekos2_megjelenito_LBL.AutoSize = true;
-            this.jatekos2_megjelenito_LBL.Location = new System.Drawing.Point(143, 6);
+            this.jatekos2_megjelenito_LBL.Location = new System.Drawing.Point(199, 6);
             this.jatekos2_megjelenito_LBL.Name = "jatekos2_megjelenito_LBL";
             this.jatekos2_megjelenito_LBL.Size = new System.Drawing.Size(0, 13);
             this.jatekos2_megjelenito_LBL.TabIndex = 6;

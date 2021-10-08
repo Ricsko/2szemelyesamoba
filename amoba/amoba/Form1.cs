@@ -54,11 +54,8 @@ namespace amoba
         }
         private void klikk(object sender, EventArgs e)
         {
-            int x = 0;
-            int o = 0;
             Button klikkelt = sender as Button;
             klikkelt.Text = aktualisjel;
-
 
             int sor = Convert.ToInt32(klikkelt.Name.Split('_')[1]);
             int oszlop = Convert.ToInt32(klikkelt.Name.Split('_')[2]);
@@ -72,43 +69,6 @@ namespace amoba
             else
             {
                 aktualisjel = "X";
-            }
-
-
-            
-            for (int i = 0; i < 10; i++)
-            {
-                for (int j = 1; j < 10; j++)
-                {
-                    if (tictac[i, j] != "" && tictac[i,j]=="X" && tictac[i, j] == tictac[i, j - 1])
-                    {
-                        x++;
-                    }
-                    /*
-                    if (tictac[i, j] == "" && tictac[i, j] != "X" && tictac[i, j] == tictac[i, j - 1])
-                    {
-                        x--;
-                    }
-                    */
-                    else if(tictac[i, j] != "" && tictac[i, j] == "O" && tictac[i, j] == tictac[i, j - 1])
-                    {
-                        o++;
-                    }
-                    /*
-                    else if (tictac[i, j] == "" && tictac[i, j] != "O" && tictac[i, j] == tictac[i, j - 1])
-                    {
-                        o--;
-                    }
-                    */
-                }
-            }
-            if (o == 4)
-            {
-                MessageBox.Show("O nyert");
-            }
-            else if(x == 4)
-            {
-                MessageBox.Show("X nyert");
             }
         }
 
@@ -133,9 +93,8 @@ namespace amoba
         private void start_BTN_Click(object sender, EventArgs e)
         {
             jatekosNevek();
-            gombletrehozas();
             RandomJEL();
-
+            gombletrehozas();
         }
 
         private void RandomJEL()
@@ -144,6 +103,8 @@ namespace amoba
             string[] jelek = new string[2] { "X", "O" };
             int index = r.Next(0, 2);
             jatekos1_jel = jelek[index];
+            
+
             if(jatekos1_jel == "X")
             {
                 jatekos2_jel = "O";
@@ -152,6 +113,9 @@ namespace amoba
             {
                 jatekos2_jel = "X";
             }
+
+            jatekos1_megjelenito_LBL.Text = jatekos1 + " " + jatekos1_jel;
+            jatekos2_megjelenito_LBL.Text = jatekos2 + " " + jatekos2_jel;
         }
     }
 }
