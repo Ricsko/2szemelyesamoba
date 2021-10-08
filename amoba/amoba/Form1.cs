@@ -62,7 +62,7 @@ namespace amoba
 
             tictac[sor, oszlop] = aktualisjel;
 
-            if(aktualisjel == "X")
+            if (aktualisjel == "X")
             {
                 aktualisjel = "O";
             }
@@ -70,6 +70,8 @@ namespace amoba
             {
                 aktualisjel = "X";
             }
+
+            soronlevoJatekos();
         }
 
         private void jatekosNevek()
@@ -94,7 +96,22 @@ namespace amoba
         {
             jatekosNevek();
             RandomJEL();
+            soronlevoJatekos();
             gombletrehozas();
+        }
+
+        private void soronlevoJatekos()
+        {
+            if (jatekos1_megjelenito_LBL.Text.Contains(aktualisjel))
+            {
+                jatekos1_megjelenito_LBL.ForeColor = Color.FromArgb(110, 215, 65);
+                jatekos2_megjelenito_LBL.ForeColor = Color.Black;
+            }
+            else if (jatekos2_megjelenito_LBL.Text.Contains(aktualisjel))
+            {
+                jatekos2_megjelenito_LBL.ForeColor = Color.FromArgb(110, 215, 65);
+                jatekos1_megjelenito_LBL.ForeColor = Color.Black;
+            }
         }
 
         private void RandomJEL()
