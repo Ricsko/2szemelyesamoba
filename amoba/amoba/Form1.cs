@@ -87,12 +87,16 @@ namespace amoba
             if (jatekos1_megjelenito_LBL.Text.Contains(aktualisjel))
             {
                 jatekos1_megjelenito_LBL.ForeColor = Color.FromArgb(110, 215, 65);
+                jatekos1_megjelenito_LBL.Font = new Font("Microsoft Sans Serif", 10);
                 jatekos2_megjelenito_LBL.ForeColor = Color.Black;
+                jatekos2_megjelenito_LBL.Font = new Font("Microsoft Sans Serif", 8);
             }
             else if (jatekos2_megjelenito_LBL.Text.Contains(aktualisjel))
             {
                 jatekos2_megjelenito_LBL.ForeColor = Color.FromArgb(110, 215, 65);
+                jatekos2_megjelenito_LBL.Font = new Font("Microsoft Sans Serif", 10);
                 jatekos1_megjelenito_LBL.ForeColor = Color.Black;
+                jatekos1_megjelenito_LBL.Font = new Font("Microsoft Sans Serif", 8);
             }
         }
 
