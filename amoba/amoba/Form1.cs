@@ -44,8 +44,31 @@ namespace amoba
             {
                 aktualisjel = "X";
             }
+            klikkelt.Enabled = false;
 
             soronlevoJatekos();
+            jatekLogika();
+        }
+
+        private void jatekLogika()
+        {
+            string xo = "";
+
+            for (int i = 0; i < 10; i++)
+            {
+                for (int j = 1; j < 10; j++)
+                {
+                    xo += tictac[i, j];
+                }
+            }
+            if (xo.Contains("XXXXX"))
+            {
+                MessageBox.Show("Grat X");
+            }
+            else if (xo.Contains("OOOOO"))
+            {
+                MessageBox.Show("Grat O");
+            }
         }
 
         private void start_BTN_Click(object sender, EventArgs e)
@@ -72,7 +95,7 @@ namespace amoba
                     button1.Name = $"BTN_{i}_{j}";
                     this.Controls.Add(button1);
                     buttonok[i, j] = button1;
-                    tictac[i, j] = "";
+                    tictac[i, j] = "a";
 
                     x += 50;
                 }
