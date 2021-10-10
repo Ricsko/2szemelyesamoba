@@ -69,11 +69,25 @@ namespace amoba
             }
             if (xo.Contains("XXXXX"))
             {
-                MessageBox.Show("Grat X");
+                if (jatekos1_jel == "X")
+                {
+                    MessageBox.Show($"Grat {jatekos1}");
+                }
+                else if (jatekos2_jel == "X")
+                {
+                    MessageBox.Show($"Grat {jatekos2}");
+                }
             }
             else if (xo.Contains("OOOOO"))
             {
-                MessageBox.Show("Grat O");
+                if (jatekos1_jel == "O")
+                {
+                    MessageBox.Show($"Grat {jatekos1}");
+                }
+                else if (jatekos2_jel == "O")
+                {
+                    MessageBox.Show($"Grat {jatekos2}");
+                }
             }
         }
 
@@ -90,11 +104,25 @@ namespace amoba
             }
             if (xo.Contains("XXXXX"))
             {
-                MessageBox.Show("Grat X");
+                if(jatekos1_jel == "X")
+                {
+                    MessageBox.Show($"Grat {jatekos1}");
+                }
+                else if (jatekos2_jel == "X")
+                {
+                    MessageBox.Show($"Grat {jatekos2}");
+                }    
             }
             else if (xo.Contains("OOOOO"))
             {
-                MessageBox.Show("Grat O");
+                if(jatekos1_jel == "O")
+                {
+                    MessageBox.Show($"Grat {jatekos1}");
+                }
+                else if(jatekos2_jel == "O")
+                {
+                    MessageBox.Show($"Grat {jatekos2}");
+                }
             }
         }
 
