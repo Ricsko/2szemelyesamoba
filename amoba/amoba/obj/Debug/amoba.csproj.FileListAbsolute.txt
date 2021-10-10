@@ -28,3 +28,13 @@ D:\tp_amoba\amoba\amoba\obj\Debug\amoba.csproj.GenerateResource.cache
 D:\tp_amoba\amoba\amoba\obj\Debug\amoba.csproj.CoreCompileInputs.cache
 D:\tp_amoba\amoba\amoba\obj\Debug\amoba.exe
 D:\tp_amoba\amoba\amoba\obj\Debug\amoba.pdb
+C:\Users\lenne\Desktop\nyuszisuli\hazi\amoba\amoba\bin\Debug\amoba.exe.config
+C:\Users\lenne\Desktop\nyuszisuli\hazi\amoba\amoba\bin\Debug\amoba.exe
+C:\Users\lenne\Desktop\nyuszisuli\hazi\amoba\amoba\bin\Debug\amoba.pdb
+C:\Users\lenne\Desktop\nyuszisuli\hazi\amoba\amoba\obj\Debug\amoba.csprojAssemblyReference.cache
+C:\Users\lenne\Desktop\nyuszisuli\hazi\amoba\amoba\obj\Debug\amoba.Form1.resources
+C:\Users\lenne\Desktop\nyuszisuli\hazi\amoba\amoba\obj\Debug\amoba.Properties.Resources.resources
+C:\Users\lenne\Desktop\nyuszisuli\hazi\amoba\amoba\obj\Debug\amoba.csproj.GenerateResource.cache
+C:\Users\lenne\Desktop\nyuszisuli\hazi\amoba\amoba\obj\Debug\amoba.csproj.CoreCompileInputs.cache
+C:\Users\lenne\Desktop\nyuszisuli\hazi\amoba\amoba\obj\Debug\amoba.exe
+C:\Users\lenne\Desktop\nyuszisuli\hazi\amoba\amoba\obj\Debug\amoba.pdb

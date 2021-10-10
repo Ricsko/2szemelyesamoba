@@ -103,7 +103,7 @@ namespace amoba
             jatekosNevek();
             RandomJEL();
             soronlevoJatekos();
-            gombletrehozas();
+            
         }
         private void gombletrehozas()
         {
@@ -167,8 +167,6 @@ namespace amoba
                 jatekos2_jel = "X";
             }
 
-            jatekos1_megjelenito_LBL.Text = jatekos1 + " " + jatekos1_jel;
-            jatekos2_megjelenito_LBL.Text = jatekos2 + " " + jatekos2_jel;
         }
 
         private void jatekosNevek()
@@ -179,14 +177,33 @@ namespace amoba
             jatekos1 = jatekos1_TBOX.Text;
             jatekos2 = jatekos2_TBOX.Text;
 
-            jatekos1_megjelenito_LBL.Text = jatekos1;
-            jatekos2_megjelenito_LBL.Text = jatekos2;
 
-            label1.Visible = false;
-            label2.Visible = false;
-            jatekos1_TBOX.Visible = false;
-            jatekos2_TBOX.Visible = false;
-            start_BTN.Visible = false;
+            if(jatekos1 == "")
+            {
+                MessageBox.Show("Nem adtál meg nevet az első játékosnak!");
+            }
+            else if(jatekos2 == "")
+            {
+                MessageBox.Show("Nem adtál meg nevet a második játékosnak!");
+            }
+            else
+            {
+                gombletrehozas();
+
+                label1.Visible = false;
+                label2.Visible = false;
+
+                jatekos1_TBOX.Visible = false;
+                jatekos2_TBOX.Visible = false;
+                start_BTN.Visible = false;
+
+                jatekos1_megjelenito_LBL.Text = jatekos1;
+                jatekos2_megjelenito_LBL.Text = jatekos2;
+
+                jatekos1_megjelenito_LBL.Text = jatekos1 + " " + jatekos1_jel;
+                jatekos2_megjelenito_LBL.Text = jatekos2 + " " + jatekos2_jel;
+            }
+
         }
     }
 }
