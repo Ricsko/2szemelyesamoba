@@ -129,9 +129,6 @@ namespace amoba
         private void start_BTN_Click(object sender, EventArgs e)
         {
             jatekosNevek();
-            RandomJEL();
-            soronlevoJatekos();
-            
         }
         private void gombletrehozas()
         {
@@ -216,7 +213,8 @@ namespace amoba
             }
             else
             {
-                gombletrehozas();
+                RandomJEL();
+                
 
                 label1.Visible = false;
                 label2.Visible = false;
@@ -230,6 +228,10 @@ namespace amoba
 
                 jatekos1_megjelenito_LBL.Text = jatekos1 + " " + jatekos1_jel;
                 jatekos2_megjelenito_LBL.Text = jatekos2 + " " + jatekos2_jel;
+
+                soronlevoJatekos();
+                gombletrehozas();
+
             }
 
         }
