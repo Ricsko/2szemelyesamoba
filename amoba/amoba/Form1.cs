@@ -71,22 +71,22 @@ namespace amoba
             {
                 if (jatekos1_jel == "X")
                 {
-                    MessageBox.Show($"Grat {jatekos1}");
+                    MessageBox.Show($"A játék győztese: {jatekos1}");
                 }
                 else if (jatekos2_jel == "X")
                 {
-                    MessageBox.Show($"Grat {jatekos2}");
+                    MessageBox.Show($"A játék győztese: {jatekos2}");
                 }
             }
             else if (xo.Contains("OOOOO"))
             {
                 if (jatekos1_jel == "O")
                 {
-                    MessageBox.Show($"Grat {jatekos1}");
+                    MessageBox.Show($"A játék győztese: {jatekos1}");
                 }
                 else if (jatekos2_jel == "O")
                 {
-                    MessageBox.Show($"Grat {jatekos2}");
+                    MessageBox.Show($"A játék győztese: {jatekos2}");
                 }
             }
         }
