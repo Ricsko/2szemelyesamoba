@@ -100,6 +100,7 @@ namespace amoba
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlDark;
             this.ClientSize = new System.Drawing.Size(314, 241);
             this.Controls.Add(this.jatekos2_megjelenito_LBL);
             this.Controls.Add(this.jatekos1_megjelenito_LBL);
