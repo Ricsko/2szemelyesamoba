@@ -54,6 +54,51 @@ namespace amoba
         {
             vizszintesEllenorzes();
             fuggolegesEllenorzes();
+            balAtloEllenorzes();
+        }
+
+        private void balAtloEllenorzes()
+        {
+            int szamlaloX = 0;
+            int szamlaloO = 0;
+
+            for (int i = 1; i < 10; i++)
+            {
+                for (int j = 1; j < 10; j++)
+                {
+                    if (tictac[i - 1, j - 1] == tictac[i, j] && tictac[i, j] != "a" && tictac[i - 1, j - 1] != "a" && tictac[i, j] == "X" && tictac[i - 1, j - 1] == "X")
+                    {
+                        szamlaloX++;
+                    }
+                    else if (tictac[i - 1, j - 1] == tictac[i, j] && tictac[i, j] != "a" && tictac[i - 1, j - 1] != "a" && tictac[i, j] == "O" && tictac[i - 1, j - 1] == "O")
+                    {
+                        szamlaloO++;
+                    }
+                }
+            }
+            if (szamlaloX == 4 || szamlaloO == 4)
+            {
+                if (jatekos1_jel == "X")
+                {
+                    MessageBox.Show($"A játék győztese: {jatekos1}");
+                }
+                else if (jatekos2_jel == "X")
+                {
+                    MessageBox.Show($"A játék győztese: {jatekos2}");
+                }
+
+                else if (jatekos1_jel == "O")
+                {
+                    MessageBox.Show($"A játék győztese: {jatekos1}");
+                }
+                else if (jatekos2_jel == "O")
+                {
+                    MessageBox.Show($"A játék győztese: {jatekos2}");
+                }
+            }
+
+            szamlaloX = 0;
+            szamlaloO = 0;
         }
 
         private void fuggolegesEllenorzes()
