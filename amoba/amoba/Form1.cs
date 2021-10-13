@@ -54,28 +54,45 @@ namespace amoba
         {
             vizszintesEllenorzes();
             fuggolegesEllenorzes();
-            balAtloEllenorzes();
+            //balAtloEllenorzes();
+            jobbAtloEllenorzes();
+        }
+
+        private void jobbAtloEllenorzes()
+        {
+            string xd = "";
+
+            for (int i = 4; i < 10; i--)
+            {
+                for (int j = 0; j < i; j++)
+                {
+                    if (tictac[i, j] != "a" && tictac[i, j] == tictac[i - 1, j + 1])
+                    {
+                        for (int k = 0; k < ; k++)
+                        {
+
+                        }
+                    }
+                }
+            }
+            MessageBox.Show(xd);
         }
 
         private void balAtloEllenorzes()
         {
+            /*
             int szamlaloX = 0;
             int szamlaloO = 0;
+            
 
-            for (int i = 1; i < 10; i++)
+            for (int i = 4; i < 10; i++)
             {
-                for (int j = 1; j < 10; j++)
+                for (int j = 0; j < 10; j++)
                 {
-                    if (tictac[i - 1, j - 1] == tictac[i, j] && tictac[i, j] != "a" && tictac[i - 1, j - 1] != "a" && tictac[i, j] == "X" && tictac[i - 1, j - 1] == "X")
-                    {
-                        szamlaloX++;
-                    }
-                    else if (tictac[i - 1, j - 1] == tictac[i, j] && tictac[i, j] != "a" && tictac[i - 1, j - 1] != "a" && tictac[i, j] == "O" && tictac[i - 1, j - 1] == "O")
-                    {
-                        szamlaloO++;
-                    }
+                   if(tictac[i,j]!="a"&&tictac[i,j])
                 }
             }
+
             if (szamlaloX == 4 || szamlaloO == 4)
             {
                 if (jatekos1_jel == "X")
@@ -99,6 +116,7 @@ namespace amoba
 
             szamlaloX = 0;
             szamlaloO = 0;
+            */
         }
 
         private void fuggolegesEllenorzes()
@@ -250,11 +268,11 @@ namespace amoba
 
             if(jatekos1 == "")
             {
-                MessageBox.Show("Nem adtál meg nevet az első játékosnak!");
+                MessageBox.Show("Mond hol van a neved ember?");
             }
             else if(jatekos2 == "")
             {
-                MessageBox.Show("Nem adtál meg nevet a második játékosnak!");
+                MessageBox.Show("Mond hol van a neved ember?");
             }
             else
             {
